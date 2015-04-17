@@ -233,7 +233,7 @@ class Encryption extends Wrapper {
 
 		$sharePath = $this->fullPath;
 		if (!$this->storage->file_exists($this->internalPath)) {
-			$sharePath = dirname($path);
+			$sharePath = dirname($sharePath);
 		}
 
 		$accessList = $this->file->getAccessList($sharePath);
